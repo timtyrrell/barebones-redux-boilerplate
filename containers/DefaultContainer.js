@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { addThing } from '../actions'
+import { fetchThing } from '../actions'
 import Default from '../components/Default'
 
 const mapStateToProps = (state) => {
@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onDefaultClick: (text) => {
-      dispatch(addThing('hi'))
+      dispatch(fetchThing('hi'))
     }
   }
 }
