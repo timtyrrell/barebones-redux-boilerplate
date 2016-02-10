@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import defaultSomething from './default';
+import todos from './todos';
+import filter from './filter';
 
 const appStore = combineReducers({
-  defaultSomething
+  todos,
+  filter
 });
 
 export default appStore;
