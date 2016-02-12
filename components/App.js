@@ -1,9 +1,9 @@
 import React from 'react';
-import DefaultContainer from '../containers/DefaultContainer';
+import TodosContainer from '../containers/TodosContainer';
 
 const App = () => (
   <div>
-    <DefaultContainer />
+    <TodosContainer />
   </div>
 )
 

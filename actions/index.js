@@ -1,17 +1,13 @@
-import SomethingFetcher from '../utils/somethingFetcher';
-
-export const addThing = (text) => {
+export const addTodo = (text) => {
   return {
-    type: 'ADD_THING',
+    type: 'ADD_TODO',
     text
   }
 }
 
-export function fetchThing(text) {
-  return dispatch => {
-    SomethingFetcher.fetch(text)
-      .then((response) => {
-        dispatch(addThing(response.text));
-      });
-  };
+export const deleteTodo = (id) => {
+  return {
+    type: 'DELETE_TODO',
+    id
+  }
 }
